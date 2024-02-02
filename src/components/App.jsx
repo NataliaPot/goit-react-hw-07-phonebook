@@ -1,16 +1,17 @@
+import {
+  TitleContacts,
+  TitlePhonebook,
+} from './ContactForm/ContactForm.styled';
+import ContactList from './ContactList/ContactList';
+import { ContactForm } from './ContactForm/ContactForm';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <TitlePhonebook>Phonebook</TitlePhonebook>
+      <ContactForm />
+      <TitleContacts>Contacts</TitleContacts>
+      <ContactList></ContactList>
+    </>
   );
 };
